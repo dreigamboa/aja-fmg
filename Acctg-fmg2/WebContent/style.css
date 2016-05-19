@@ -1,0 +1,56 @@
+@CHARSET "ISO-8859-1";
+body{
+	font-family: Century Gothic;
+	font-size: 14px;
+}
+table{
+	border: 1px solid black;
+	border-radius: 5px;
+	
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+#header{
+	background-color: #33CCFF;
+	font-weight: bold;
+}
+#header2{
+	background-color: #66FFFF;
+	font-weight: bold;
+}
+#headerText{
+	font-family: Century Gothic;
+	font-size: 20px;
+	font-weight: bold;
+}
+#header_max{
+	font-family: Century Gothic;
+	font-size: 30px;
+	font-weight: bold;
+}
+#normal{
+	font-family: Century Gothic;
+	font-size: 15px;
+}
+#normal_u{
+	font-family: Century Gothic;
+	font-size: 15px;
+	text-decoration: underline;
+}
+#submit{
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 3px;
+	height: 30px;
+	font-family: Century Gothic;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+#submit:hover{
+	background-color: #00CCFF;
+}
+
+					

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+		<title>APPJAM REQUISITION FORM</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<form action = "process.html" method = "post">
+		<center><br><p id = "headerText">APPJAM COMPUTER SHOP<BR>PURCHASE REQUISITION FORM<br>
+		<table >
+			<tr>
+				<td id = "header">REQUESTED BY:</td>
+				<td><input type="text" name="authorizer" size="53" required></td>
+			</tr>
+		</table><br>
+		<table>
+			<tr>
+				<td id = "header">Company Name</td>
+				<td><input type="text" name="b_companyName" size="60"  max = "300" required></td>
+				<td id = "header">ZIP #</td>
+				<td><input type="number" name="b_zip" size="60" max = "9999" min = "1000" required></td>
+			</tr>
+			<tr>
+				<td id = "header2">Unit/Bldg/House No.</td>
+				<td><input type="text" name="b_no" size="60" max = "300" required></td>
+				<td id = "header2">Date</td>
+				<td><input type="date" name="b_date" size="60" placeholder = "click drop down button to view calendar" ></td>
+			</tr>
+			<tr>
+				<td id = "header">Subdivision/Street </td>
+				<td><input type="text" name="b_subdiv" size="60" max = "300" required></td>
+				<td id = "header">Courier:</td>
+				<td>
+				    <select name = "b_courier" required>
+	 					<option value="null">-Choose-</option>
+	  					<option value="LBC">LBC (2500.00)</option>
+	  					<option value="ABest">ABest (2400.00)</option>
+	  					<option value="Air21">Air21 (3500.00)</option>
+	  					<option value="FedEx">FedEx (4500.00)</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td id = "header2">Barangay</td>
+				<td><input type="text" name="b_brgy" size="60" max = "300" required></td>
+				<td id = "header2">FOB Point:</td>
+				<td>
+				 <select name = "b_fob" required>
+	 					<option value="null">-Choose-</option>
+	  					<option value="Shipping Address">Shipping Address (+ 1000.00)</option>
+	  					<option value="Pick-up">Pick-up (Courier's Branch) (+ 1200.00)</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td id = "header">Town/City</td>
+				<td><input type="text" name="b_city" size="60" min = "1000" max = "9999" required></td>
+				<td id = "header">Payment Method:</td>
+				<td><select name = "b_paymentMethod" required>
+ 					<option value="null">-Choose-</option>
+  					<option value="Cash">Cash</option>
+  					<option value="Check">Check</option>
+  					<option value="Credit">Credit Card</option>
+  					<option value="Cash-on-Delivery">Cash-on-Delivery</option>
+  					<option value="Deposit">Deposit</option>
+					</select>
+				</tr>
+			<tr>
+				<td id = "header2">Province</td>
+				<td><input type="text" name="b_province" size="60"></td>
+				<td id = "header2">Phone</td>
+				<td><input type="number" name="b_phoneNum" size="60" min = "0001" max = "99999999999" required></td>
+			</tr>
+		</table>
+		<br>
+		<table>
+			<tr>
+				<td id = "header">ITEM #</td>
+				<td id = "header2">DESCRIPTION</td>
+				<td id = "header">UNIT PRICE</td>
+				<td id = "header2">QUANTITY</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="i_1" size="25" max = "10" required></td>
+				<td><input type="text" name="d_1" size="53" max = "300" required></td>
+				<td><input type="number" name="u_1" size="27" min = "1" required></td>
+				<td><input type="number" name="q_1" size="27" min = "1" required></td>
+			</tr>	
+			<tr>
+				<td><input type="text" name="i_2" size="25" max = "10"></td>
+				<td><input type="text" name="d_2" size="53" max = "300"></td>
+				<td><input type="number" name="u_2" size="27" min = "1"></td>
+				<td><input type="number" name="q_2" size="27" min = "1"></td>
+			</tr>	
+			<tr>
+				<td><input type="text" name="i_3" size="25" max = "10"></td>
+				<td><input type="text" name="d_3" size="53"  max = "300"></td>
+				<td><input type="number" name="u_3" size="25" min = "1"></td>
+				<td><input type="number" name="q_3" size="27" min = "1"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="i_4" size="25" max = "10"></td>
+				<td><input type="text" name="d_4" size="53" max = "300"></td>
+				<td><input type="number" name="u_4" size="27" min = "1"></td>
+				<td><input type="number" name="q_4" size="27" min = "1"></td>
+			</tr>	
+			<tr>
+				<td><input type="text" name="i_5" size="25" max = "10"></td>
+				<td><input type="text" name="d_5" size="53" max = "300"></td>
+				<td><input type="number" name="u_5" size="27" min = "1"></td>
+				<td><input type="number" name="q_5" size="27" min = "1"></td>
+			</tr>	
+
+		</table border = "1">
+		<br><br>
+		<input id = "submit" type = "submit" value = "GENERATE PURCHASE REQUISITION FORM ">
+		<br><br>
+	</form>
+</body>
+</html>
